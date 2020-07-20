@@ -34,6 +34,7 @@ public class NativeActivity extends AppCompatActivity {
         mTextView7 = findViewById(R.id.textView7);
         mTextView8 = findViewById(R.id.textView8);
         mTextView9 = findViewById(R.id.textView9);
+        accessTheViews();
     }
 
     private void accessTheViews() {

@@ -1,12 +1,13 @@
 package io.github.lettucech.android.viewbindingcomparison;
 
+import android.app.Activity;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import io.github.lettucech.android.viewbindingcomparison.databinding.ActivityViewBindingBinding;
 
-public class ViewBindingActivity extends AppCompatActivity {
+public class ViewBindingActivity extends Activity {
 
     private ActivityViewBindingBinding mBinding;
 
@@ -14,6 +15,8 @@ public class ViewBindingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mBinding = ActivityViewBindingBinding.inflate(getLayoutInflater());
+        setContentView(mBinding.getRoot());
+        accessTheViews();
     }
 
     private void accessTheViews() {

@@ -33,6 +33,7 @@ public class ButterKnifeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_binding);
+        accessTheViews();
     }
 
     private void accessTheViews() {

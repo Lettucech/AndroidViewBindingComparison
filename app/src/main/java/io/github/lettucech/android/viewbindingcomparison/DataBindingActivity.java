@@ -16,6 +16,8 @@ public class DataBindingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mBinding = DataBindingUtil.inflate(getLayoutInflater(), R.layout.activity_data_binding, null, false);
+        setContentView(mBinding.getRoot());
+        accessTheViews();
     }
 
     private void accessTheViews() {
